@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Messi Blog</title>
+    <link rel="stylesheet" href="default.css">
+    <script src="https://kit.fontawesome.com/16432ce82c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="logo.webp" alt="">
+        </div>
+        <ul id="menuList">
+            <li><a href="#home">Intro</a></li>
+            <li><a href="#country">Country</a></li>
+            <li><a href="#club">Club</a></li>
+            <li><a href="#debate">Debate?</a></li>
+        </ul>
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
+        <script>
+            let menuList = document.getElementById("menuList")
+            menuList.style.maxHeight = "0px";
+
+
+            function toggleMenu() {
+                if (menuList.style.maxHeight == "0px") {
+                    menuList.style.maxHeight = "130px";
+
+                }
+                else {
+                    menuList.style.maxHeight = "0px";
+                }
+            }
+        </script>
+    </nav>
+    <section id="home">
+        <span>
+            <h3><b>Lionel Messi</b>: The Maestro Who Redefined the Beautiful Game</h3>
+            <p>In the pantheon of football legends, few names shine as brightly as <b><a href=""
+                        style="text-decoration: none; color: rgba(255,166,0,0.776);">Lionel Messi</a></b>’s. Revered for
+                his unparalleled skill, vision, and dedication, Messi has captivated the hearts of millions across the
+                globe. From his humble beginnings in Rosario, Argentina, to becoming a global icon, Messi’s journey is a
+                testament to talent, perseverance, and an unyielding passion for the game. As we delve into the
+                remarkable story of this extraordinary athlete, we’ll explore the moments that have defined his career,
+                the milestones that have cemented his legacy, and the indelible impact he has had on football as we know
+                it. Join us as we celebrate the life and achievements of the man who has not only redefined the
+                beautiful game but has also inspired generations of players and fans alike.</p>
+        </span>
+        <div class="content">
+            <img src="bcg.webp" alt="" class="img-fluid">
+        </div>
+    </section>
+
+
+
+
+    <section id="country">
+        <h3>The Conqueror Of The World</h3>
+        <div class="country-content">
+            <span>
+                <h3>World Cup - 2022</h3>
+                <p>
+                    <b>Lionel Messi</b>’s journey to winning the 2022 World Cup is a story of dreams, struggles, and
+                    unshakable determination. For years, he carried the hopes of Argentina on his shoulders, facing
+                    heartbreaking losses along the way. In 2014, he came close but lost in the final, and earlier
+                    defeats in the Copa América only added to his pain. At one point, the weight of failure made him
+                    step away from international football. But Messi didn’t give up. Instead, he returned stronger,
+                    driven by the belief that success was still within reach.
+
+                    In 2022, his perseverance paid off. Messi led Argentina with skill, passion, and unmatched
+                    determination, scoring crucial goals and inspiring his team every step of the way. In the dramatic
+                    final against <b>France</b>, he proved why he is one of the greatest, scoring <b>twice</b> and holding his nerve
+                    in the penalty shootout. When he finally lifted the World Cup, it wasn’t just a trophy - it was proof
+                    that hard work, patience, and never giving up can turn any dream into reality.
+                </p>
+
+            </span>
+            <div class="content-world-cup">
+                <img src="world-cup.webp" class="img-fluid" alt="world-cup">
+            </div>
+        </div>
+
+        <div class="copa-america">
+            <span>
+                <h3>Copa América - 2021</h3>
+                <p>
+                    In the 2021 Copa América, <b>Lionel Messi </b> faced a new challenge. Brazil was the host
+                    nation, and the pressure was immense. Despite the odds, Messi led his team with his usual
+                    brilliance, scoring crucial goals and guiding them through the tournament. In final, Argentina won 
+                    the title defeating Brazil. Messi’s performance was a testament to his enduring greatness.
+
+                </p>
+            </span>
+            <div class="content-copa-america">
+                <img src="copa-america.webp" class="img-fluid" alt="">
+            </div>
+        </div>
+        <div class="copa-america">
+            <span>
+                <h3>Copa América - 2024</h3>
+                <p>
+                   Yet Again!!!
+                </p>
+            </span>
+            <div class="content-copa-america-2024">
+                <img src="copa-america-2024.webp" alt="">
+            </div>
+        </div>
+    </section>
+    <section id="Club">
+       
+    </section>
+</body>
+
+</html>

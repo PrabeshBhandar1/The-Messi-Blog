@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 100;
+    background-color: rgba(6, 6, 6, 0.048);
+    ;
+    /* overflow: hidden; */
+}
+
+nav {
+    padding: 2px;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: space-around; */
+    gap: 55vw;
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    background: rgba(6, 6, 6, 0.55);
+    text-indent: 1px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav .logo{
+    font-size: 20px;
+
+}
+nav .logo img{
+    width: 50px;
+    height: 30px;
+    
+}
+nav ul li a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.menu-icon {
+    color: aliceblue;
+    font-size: 30px;
+
+}
+
+.menu-icon {
+    display: none;
+}
+
+@media (max-width:600px) {
+    nav{
+        height: 74px;
+    }
+    nav ul {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background: rgba(6, 6, 6, 0.667);
+        overflow: hidden;
+        gap: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li {
+        padding: 5px;
+
+
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    #menuList {
+        transition: all 0.5s;
+    }
+}
+
+/* NAV SECTION ENDS */
+
+/* HOME SECTION STARTS */
+
+
+#home {
+    height: 100%;
+    padding-top: 8vh;
+    width: 100%;
+    display: flex;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#home>span {
+    background-color: rgba(6, 6, 6, 0.838);
+    width: 50%;
+    color: aliceblue;
+    display: column;
+    /* text-align: center; */
+    align-items: center;
+    justify-content: center;
+}
+
+#home>span h3,
+p {
+    margin: auto;
+    padding: 10px;
+    margin-top: 60px;
+
+}
+
+#home>span h3 {
+    color: skyblue;
+    font-size: 30px;
+}
+
+#home>span p {
+    color: rgba(255, 166, 0, 0.776);
+    font-size: 20px;
+    text-overflow: unset;
+}
+
+.content {
+    width: 50%;
+    color: white;
+}
+
+.content img {
+    width: 100%;
+    height: 100%;
+
+}
+
+
+
+
+
+#country {
+    height: 100%;
+    /* padding-top: 8vh; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#country>h3 {
+    color: skyblue;
+    font-size: 30px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(6, 6, 6, 0.817);
+}
+
+#country>.country-content>span h3 {
+    color: skyblue;
+    text-align: center;
+    padding-top: 40px;
+
+}
+
+#country>.country-content>span p {
+    color: rgba(255, 166, 0, 0.776);
+    font-size: 20px;
+    text-overflow: unset;
+}
+
+#country>.country-content {
+    background-color: rgba(6, 6, 6, 0.838);
+    width: 100%;
+    color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    /* text-align: center; */
+    align-items: center;
+    justify-content: center;
+}
+
+#country>.country-content>span {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#country>.country-content>.content-world-cup {
+    width: 50%;
+    color: white;
+
+}
+
+#country>.country-content>.content-world-cup img {
+    width: 100%;
+    height: 100%;
+
+}
+
+
+
+
+
+#country>.copa-america>span h3 {
+    color: skyblue;
+    text-align: center;
+    padding-top: 40px;
+
+}
+
+#country>.copa-america>span p {
+    color: rgba(255, 166, 0, 0.776);
+    font-size: 20px;
+    text-overflow: unset;
+}
+
+#country>.copa-america {
+    background-color: rgba(6, 6, 6, 0.838);
+    width: 100%;
+    color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    /* text-align: center; */
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#country>.copa-america>span {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#country>.copa-america>.content-copa-america {
+    width: 50%;
+    color: white;
+
+}
+
+#country>.copa-america>.content-copa-america img {
+    width: 100%;
+    height: 100%;
+}
+
+
+#country>.copa-america>.content-copa-america-2024{
+    width: 50%;
+    color: white;
+}
+#country>.copa-america>.content-copa-america-2024 img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+@media (max-width:600px) {
+    #home{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+    #home>span{
+        width: 100vw;
+        align-items: center;
+    }
+    #home>.content{
+        width: 100vw;
+        height: 70vh;
+    }
+
+    #country{
+        display: flex;
+        flex-direction: column;
+    }
+    #country> h3{
+        width: 100vw;
+    }
+    #country>.country-content{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+    #country>.country-content>span{
+        width: 100%;
+        align-items: center;
+    }
+    #country>.copa-america{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+    #country>.copa-america>span{
+        width: 100vw;
+    }
+
+    
+}
